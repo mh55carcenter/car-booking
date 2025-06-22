@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نموذج حجز صيانة</title>
+  <style>
+    body { font-family: Arial; margin: 2rem; background: #f9f9f9; text-align: right; }
+    h1 { color: #333; }
+    input, textarea {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 0.7rem 1.5rem;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <h1>حجز صيانة السيارات</h1>
+  <!-- هنا يجب أن يكون هذا فقط، بدون أي جافاسكربت -->
+  <form method="GET"
+        action="https://script.google.com/macros/s/AKfycbwjk5jS8ULtV1w3LaN3ZsFykEFyHBNQ8a3B8rhJSU22_-Nt6SNEEl2v1VLlV0jfe3ucrQ/exec">
+    <input type="text" name="name"   placeholder="الاسم"         required>
+    <input type="tel"  name="phone"  placeholder="رقم الهاتف"     required>
+    <input type="text" name="car"    placeholder="نوع السيارة"    required>
+    <input type="date" name="date"   required>
+    <textarea name="notes" placeholder="ملاحظات إضافية"></textarea>
+    <button type="submit">إرسال</button>
+  </form>
+</body>
+</html>
